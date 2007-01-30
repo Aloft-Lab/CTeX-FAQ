@@ -2,9 +2,9 @@
 %%
 %% Created by aloft (aloft@ctex.org)
 %%
-%% Version 0.6 (27-Sep-2004)
+%% Version 0.7 (30-Jan-2007)
 %%
-%% $Id: ctex-faq.sty,v 1.17 2006/11/23 08:59:17 aloft Exp $
+%% $Id$
 %%
 \def\filedate{2004/09/27}
 \def\fileversion{0.6}
@@ -150,7 +150,7 @@
   \else%
     \expandafter\RCS@setDate\RCS@value\@nil%
   \fi}
-\def\RCS@setDate#1/#2/#3 #4\@nil{%
+\def\RCS@setDate#1-#2-#3 #4\@nil{%
   \def\RCSday{#3}%
   \def\RCSmonth{#2}%
   \def\RCSyear{#1}%
@@ -160,8 +160,6 @@
     \year \number\RCSyear%
     \today\endgroup}
   \def\RCSTime{#4}}
-\def\RCS@Exp{Exp}
-\def\betaversion{\ifx\RCSState\RCS@Exp\ beta\fi}
 %
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
