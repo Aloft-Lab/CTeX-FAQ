@@ -25,12 +25,7 @@
 % Loading packages
 %
 %
-\newif\ifpdf
-\ifx\pdfoutput\undefined % We're not running pdftex
-  \pdffalse
-\else
-  \pdftrue
-\fi
+\RequirePackage{ifpdf}
 %
 %
 \ifpdf
